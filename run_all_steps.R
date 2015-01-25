@@ -17,10 +17,10 @@ run_all_steps <- function(){
   #(1)finds and merges test and train sets
   df_test = find_file("X_test.txt")
   df_train = find_file("X_train.txt")
-  df_complete = rbind(dfset1, dfset2)
+  df_complete = rbind(df_test, df_train)
   
   #gets mean and std table indexes from features.txt file
-  df_features = find_set("features.txt")
+  df_features = find_file("features.txt")
   std_index <- df_features[grep("std()", as.character(df_features[[2]])),]
   mean_index <- df_features[grep("mean", as.character(df_features[[2]])),]
   

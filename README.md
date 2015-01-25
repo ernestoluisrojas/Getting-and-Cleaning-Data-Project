@@ -16,4 +16,8 @@ run_all_steps()
 CODE BOOK:
 
 Contains the description for all variables included in the run_analysis data frame.
-  
+
+###############################################################################################
+NOTES:
+
+Both script should be run from the same directory that contains "UCI HAR Dataset" dir.
